@@ -1,0 +1,406 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+a{
+/*	color: #FF3333;*/color: rebeccapurple;
+	font-size: 20px;
+	text-decoration: none;
+}
+p{
+	font-size: 22px;
+}
+h1{	
+	font-size: 50px;
+	text-transform: capitalize;
+}
+/*___________header-left____________________*/
+section.header-left{
+	width: 63%;
+	background-color: rgb(232, 232, 232);
+	display: inline-block;
+	height: 100vh;
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+section.header-left nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+section.header-left nav ul li a {
+	display: block;
+	padding: 17px 10px;
+}
+
+section.header-left nav ul li:last-child,li:first-child{
+	flex-basis: 30%;
+	text-align: right;
+}
+section.header-left nav ul li:first-child a{
+	font-size: 40px;
+	font-family: 'MonteCarlo', cursive;
+	font-weight: 900;
+	text-align: left;
+}
+
+section.header-left p{
+	margin-top: 80px;
+}
+section.header-left h1{
+	margin-top: 24px;
+	line-height: 70px;
+}
+input[type="text"]{
+	margin: 50px 0 0;
+	width: 100%;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 40px;
+	outline: none;
+	font-size: 16px;
+}
+div.search-move{
+	position: relative;
+	z-index: 1;
+}
+span.search{
+	background-color: pink;
+	border-radius: 40px;
+	padding: 15px 30px;
+	position: absolute;
+	top: 47.5%;
+	right: 0.4%;
+}
+
+/*_________________header-right____________________________*/
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+section.header-right{
+	width: 37%;
+	float: right;
+	background-image: 
+		linear-gradient(rgb(0, 0, 0),rgb(65, 40, 90,0.4),rgb(0, 0, 0)),
+		url(img/right-photo.jpg);
+	height: 100vh;
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+/*	rgb(102, 51, 153,0.2)*/
+}
+section.header-right nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+section.header-right nav ul li a{
+	display: block;
+	text-decoration: none;
+	margin: 27px 0;
+	padding: 10px 29px;
+	color: white;
+}
+section.header-right nav ul li:last-child a{
+	border-radius: 26px;
+	background-color: purple;
+}
+/*________header-center-img_________________*/
+header{
+	position: relative;
+}
+div.for-header-img-center img{
+	height: 390px;
+}
+div.for-header-img-center{
+	position: absolute;
+	top: 41%;
+	left: 52%;
+}
+
+/*________________wrapper____________________*/
+main div.grid-icon{
+	width: 80%;
+	margin: 100px auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 60px;
+}
+main div.grid-icon div{
+	text-align: center;
+}
+main div.grid-icon i{
+	margin: 20px 0;
+	text-align: center;
+	font-size: 25px;
+	padding: 20px;
+/*	color: #ffb938;*/
+	color: rebeccapurple;
+}
+main div.grid-icon p{
+	padding: 0px 0 30px;
+}
+
+/*_________Most Watchng anime___________*/
+
+div.most-watch{
+	text-align: center;
+}
+div.most-watch h2{
+	font-size: 30px;
+	font-weight: 900;
+}
+div.most-watch p{
+	font-size: 16px;
+	padding-top: 6px;
+	font-weight: 100;
+}
+/*______photo album for most watch anime________*/
+div.photo-album img{
+	width: 18%;
+	height: 280px;
+	margin: 60px 3px;;
+	border: 8px solid rebeccapurple;
+	border-radius: 30px;
+}
+div.photo-album{
+	position: relative;
+}
+div.photo-album span{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+/*	background-color: rgb(86, 86, 152, 0.8);*/
+	background-color: #9a9ad1;
+	border: 1px solid rgb(0, 0, 0,0.1);
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.photo-album span.right{
+	right: -15px;
+}
+div.photo-album span.left{
+	left: 27px;
+}
+/*a____________container_____________*/
+
+section.container{
+	background-color: rgb(209, 209, 209,0.4);
+	height: 60vh;
+	margin-top: 150px;
+}
+section.container h1{
+	padding-top: 60px;
+}
+section.container p{
+	padding-top: 16px;
+}
+section.container a{
+	background-color: white;
+	color: rebeccapurple;
+	margin-top: 100px 0px;
+	border-radius: 40px 0 0 40px;
+	padding: 10px 40px;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.customer-grid img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	float: left;
+}
+.customer-float-name{
+	float: left;
+}
+.customer-grid h4{
+	font-size: 20px;
+	margin: 8px 0 8px 10px;
+}
+.customer-grid span{
+	margin-left: 10px;
+	font-size: 16px;
+}
+.customer-grid blockquote {
+	margin-top: 18px;
+	text-align: justify;
+	line-height: 26px;
+}
+/*_______customer-grid______________*/
+.customer-grid{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 60px;
+	margin-top: 90px;
+}
+div.first-customer,div.second-customer,div.third-customer{
+	background-color: white;
+	padding: 30px;
+	border-radius: 30px;
+	margin-bottom: 70px;
+}
+/*_______________________avil-phone___________________*/
+section.avil-ph{
+	margin-top: 380px;
+	position: relative;
+}
+section.avil-ph img{
+	width: 300px;
+	height: 388px;
+	padding: 18px 0 0 110px;
+/*	110px*/
+}
+section.avil-ph div.ph-left{
+/*	width: 400px;*/
+	width: 36%;
+	height: 385px;
+	border-radius: 50%;
+/*	float: left;*/
+	display: inline-block;
+	overflow: hidden;
+	outline: none;
+/*	background-color: #8c8cc9;*/
+	background-color: #9e78c4;
+/*	background: radial-gradient(circle at 100px 100px, #b38dd9, #000);*/
+}
+
+section.avil-ph div.ph-right{
+	width: 48%;
+	display: inline-block;
+	margin-left: 5%;
+	padding: 0 20px 20px;
+	position: absolute;
+	top: 0;
+}
+section.avil-ph p{
+	text-transform: capitalize;
+	font-size: 20px;
+	margin-top: 20px;
+	text-align: justify;
+}
+section.avil-ph h2{
+	font-size: 50px;
+	text-transform: capitalize;
+	word-spacing: 10px;
+	letter-spacing: 3px;
+}
+
+/*__________________Subscribe________________________*/
+section.subscribe-color{
+	background-color: #661ab2;
+	color: white;
+}
+section.subscribe-grid{
+	margin-top: 180px;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+section.subscribe-grid h3{
+	font-size: 50px;
+	text-transform: capitalize;
+}
+section.subscribe-grid div.left{
+	padding: 50px;
+}
+input[type="email"],section.subscribe-grid div.right-grid button{
+	padding: 10px;
+	font-size: 17px;
+	border-radius: 50px;
+	outline: none;
+	border: none;
+}
+input[type="email"]{
+	width: 100%;
+	margin-top: 100px;
+}
+section.subscribe-grid div.right-grid{
+	position: relative;
+}
+section.subscribe-grid div.right-grid button {
+	background-color: pink;
+	position: absolute;
+	right: 0.5%;
+	top: 40%;
+}
+
+/*_______________footer__________________________*/
+footer{
+	padding: 150px 0;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	column-gap: 20px;
+	background-color: rgb(240, 135, 31,0.1);
+}
+footer h3{
+	font-size: 25px;
+	margin-bottom: 40px;
+}
+footer a{
+	display: grid;
+	padding-bottom: 10px;
+	font-size: 18px;
+	color: #7c002b;
+}
+footer div:first-child{
+	padding-left: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
